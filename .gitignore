@@ -1,0 +1,47 @@
+# ===== 构建产物 =====
+target/
+build/
+out/
+bin/
+*.class
+*.jar
+*.war
+*.ear
+
+# ===== IDE =====
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+*.swp
+*.swo
+
+# ===== 操作系统 =====
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ===== 密钥与本地配置（严禁入库）=====
+.env
+.env.*
+!.env.example
+application-local.yml
+application-local.yaml
+application-prod.yml
+application-prod.yaml
+*.p12
+*.jks
+*.keystore
+*.pem
+*.key
+
+# ===== 日志与临时文件 =====
+*.log
+logs/
+tmp/
+temp/
+
+# ===== 覆盖率报告 =====
+**/jacoco.exec
+**/coverage/

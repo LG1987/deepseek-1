@@ -1,0 +1,33 @@
+# 默认：交由 Git 自动识别文本文件，仓库内统一 LF，检出时按平台处理
+* text=auto eol=lf
+
+# Windows 脚本保持 CRLF
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
+*.ps1  text eol=crlf
+
+# Shell 脚本强制 LF
+*.sh   text eol=lf
+
+# 明确声明为二进制，避免任何行尾转换
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.ico   binary
+*.pdf   binary
+*.docx  binary
+*.xlsx  binary
+*.pptx  binary
+*.zip   binary
+*.jar   binary
+*.p12   binary
+*.jks   binary
+*.keystore binary
+
+# 语言与生成文件标记
+*.java  linguist-language=Java
+*.sql   linguist-language=SQL
+
+# 设计文档在 GitHub 上按文本展示，便于 diff
+*.md    text
